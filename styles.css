@@ -44,7 +44,7 @@ body{
 }
 
 .box {
-    background-color: white;
+    background-color: rgb(76, 70, 123);
     margin: 10px;
     text-align: center;
     width: 400px;
