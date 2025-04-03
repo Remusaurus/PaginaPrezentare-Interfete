@@ -68,11 +68,10 @@ p {
     font-size: 20px;
     margin-left: 15px;
     margin-right: 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: none;
 }
 
 .box:hover{
     transform: scale(1.1);
     filter:brightness(20%);
 }
-
