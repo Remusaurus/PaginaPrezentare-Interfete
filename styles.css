@@ -39,15 +39,16 @@ body{
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     height: 200px;
-    width: 400px;
+    width: 350px;
     object-fit: cover;
 }
 
 .box {
     background-color: rgb(52, 45, 104);
     margin: 10px;
+    margin-top: 50px;
     text-align: center;
-    width: 400px;
+    width: 350px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -58,25 +59,25 @@ body{
 }
 
 #boxmiddle{
-    margin-top: 0px;
+    
 }
 
 #boxleft{
-   margin-top: 50px;
-   width: 350px;
+   
+   
 }
 
 #boxleft img{
-    width: 350px;
+    
 }
 
 #boxright{
-   margin-top: 50px;
-   width: 350px;
+   
+   
 }
 
 #boxright img{
-    width: 350px;
+    
 }
 
 h2 {
@@ -93,5 +94,6 @@ p {
 
 .box:hover{
     transform: scale(1.1);
+    filter:brightness(20%);
 }
 
