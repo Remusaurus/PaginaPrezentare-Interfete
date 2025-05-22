@@ -71,6 +71,10 @@ h1 {
     color:white
 }
 
+p {
+    color: white;
+}
+
 .box:hover{
     transform: scale(1.1);
     filter:brightness(40%);
@@ -79,16 +83,12 @@ h1 {
 #transformerslandingimage{
     max-width: 50%;
     height: 100%;
-    display: block;
-    margin-left: auto;
+    float: right;
 }
 
 .container2 {
-    margin-top: 150px;
-    margin-left:50px;
-    margin-right:50px;
-    padding: 25px;
+    top-margin: 200px;
     display: flex;
-    flex-wrap: wrap;
-    row-gap: 100px;
+    width: 100%;
+    height: auto;
 }
