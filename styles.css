@@ -3,6 +3,8 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 
@@ -32,9 +34,9 @@ body{
     padding: 25px;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
-    align-content: space-evenly;
-    row-gap: 100px;
+    gap: 50px;
 }
 
 .box img{
@@ -67,12 +69,15 @@ h2 {
 }
 
 h1 {
-    font-size: 300%;
+    font-size: 400%;
     color:white
 }
 
 p {
+    font-size: 120%;
+    text-align: justify;
     color: white;
+
 }
 
 .box:hover{
@@ -80,15 +85,14 @@ p {
     filter:brightness(40%);
 }
 
-#transformerslandingimage{
-    max-width: 50%;
-    height: 100%;
-    float: right;
+.left, .right {
+    flex: 1 1 45%
 }
 
-.container2 {
-    top-margin: 200px;
-    display: flex;
+.landingimage {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     width: 100%;
-    height: auto;
 }
