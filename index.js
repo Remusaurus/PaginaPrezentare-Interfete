@@ -1,12 +1,21 @@
+document.addEventListener('DOMContentLoaded', function () {
+  const sortSelect = document.getElementById('sort-order');
+  const issuesGrid = document.querySelector('.issues-grid');
 
+  sortSelect.addEventListener('change', function () {
+    const sortOrder = sortSelect.value;
+    const issues = Array.from(issuesGrid.querySelectorAll('.issue'));
 
-let fullName = "Ciuciu Remus";
-let firstName;
-let lastName;
+    issues.sort(function (a, b) {
+      const dateA = new Date(a.getAttribute('data-date'));
+      const dateB = new Date(b.getAttribute('data-date'));
 
-firstName = fullName.slice(fullName.indexOf(" ")+1);
-lastName = fullName.slice(0, fullName.indexOf(" "));
+      return sortOrder === 'newest' ? dateB - dateA : dateA - dateB;
+    });
 
-console.log("First Name: " + firstName);
-console.log("Last Name: " + lastName);
-console.log("Full Name: " + fullName);
+    // Clear and re-add sorted issues
+    issues.forEach(function (issue) {
+      issuesGrid.appendChild(issue);
+    });
+  });
+});

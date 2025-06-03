@@ -5,6 +5,7 @@ body{
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    overflow-x: hidden;
 }
 
 
@@ -28,7 +29,7 @@ body{
     text-decoration: none;
 }
 .container{
-    margin-top: 150px;
+    margin-top: 100px;
     margin-left:50px;
     margin-right:50px;
     padding: 25px;
@@ -68,9 +69,16 @@ h2 {
     font-size: 300%;
 }
 
+.left h1 {
+  padding: 0;
+  font-size: 350%;
+}
+
 h1 {
-    font-size: 400%;
-    color:white
+    font-size: 250%;
+    color:white;
+    padding-left:150px;
+    margin:0;
 }
 
 p {
@@ -95,4 +103,96 @@ p {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     width: 100%;
+}
+
+.comics-issues {
+  background-color: white;
+  position:relative;
+  width:100vw;
+  left:50%;
+  margin-left: -50vw;
+}
+
+.comics-issues h1{
+  color: red;
+}
+
+.issues-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(120px, 1fr));
+  gap: 15px;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.issue {
+  padding: 10px;
+  text-align: left;
+  transition: color: 0.03s;
+}
+
+.issue img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+  transition: 0.3s;
+}
+
+.issue img:hover {
+  transform: scale(1.01);
+}
+
+.issue-title {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.issue-title a {
+  text-decoration: none;
+  color: black;
+}
+
+.issue:hover .issue-title a {
+  color:rgb(255, 0, 0);
+}
+
+label {
+  padding-left: 30px;
+  font-size: 16px;
+  margin-right: 8px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+
+#sort-order {
+  padding: 6px 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+
+.issue h2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+}
+
+.heading-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.sort-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 10px;
 }
