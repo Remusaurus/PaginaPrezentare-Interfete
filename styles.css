@@ -202,12 +202,14 @@ label {
   left:50%;
   margin-left: -50vw;
   overflow: hidden;
+  height: 555px;
 }
 
 .landing-container img {
   width: 100vw;
-  filter: brightness(25%) blur(1.7px);
+  filter: brightness(25%) blur(1.5px);
   display: block;
+  height: auto;
 }
 
 .landing-overlay {
@@ -222,4 +224,8 @@ label {
 .landing-overlay h1 {
   color:white;
   font-size: 500%;
+}
+
+.about-page .landing-container{
+  height:87vh;
 }
