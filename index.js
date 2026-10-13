@@ -12,8 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       return sortOrder === 'newest' ? dateB - dateA : dateA - dateB;
     });
-
-    // Clear and re-add sorted issues
+    
     issues.forEach(function (issue) {
       issuesGrid.appendChild(issue);
     });
