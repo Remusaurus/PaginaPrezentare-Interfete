@@ -229,3 +229,14 @@ label {
 .about-page .landing-container{
   height:87vh;
 }
+
+.footer {
+  align-items: right;
+}
+
+.footer-links {
+  padding-left: 150px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  padding-right: 150px;
+}
