@@ -1,43 +1,70 @@
 body{
-    background: linear-gradient(145deg, rgba(2,0,36,1) 25%, rgb(76, 0, 182) 100%);
+    background-image: url('resources/cosmic_background_1920x1080.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
     overflow-x: hidden;
+    margin: 0;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('resources/fonts/HelveticaNeueBold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 *{
   text-decoration: none;
 }
 
-.sitelogo{
-    height: 50px;
-    display: block;
-    float:left;
-}
-
 
 .navbar {
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-li{
- 
-  list-style: none;
-  display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    padding: 10px 20px 15px 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-li a {
-  padding-left: 10px;
-  padding-right: 10px;
-  color: white;
+.navbar .sitelogo {
+    height: 50px;
+    width: auto;
+    display: block;
 }
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 5px 0;
+    color: black;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
 .container{
     margin-top: 100px;
     margin-left:50px;
@@ -82,7 +109,7 @@ h2 {
 
 h1 {
     font-size: 250%;
-    color:white;
+    color: black;
     padding-left:150px;
     margin:0;
 }
@@ -90,7 +117,7 @@ h1 {
 p {
     font-size: 120%;
     text-align: justify;
-    color: white;
+    color: black;
 
 }
 
@@ -232,14 +259,48 @@ label {
 }
 
 .footer {
-  background-color: rgb(52, 45, 104);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: white;
   padding: 20px;
-  text-align: center;
-  color: white;
+  color: black;
 }
 
 .footer-links {
-  color: white;
+  color: black;
   text-decoration: none;
   margin-bottom: 10px;
+}
+
+.footer-logo {
+  height: 40px;
+}
+
+.footer-comics-logo {
+  height: 40px;
+}
+
+.footer-images {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.footer-links a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.footer-links a:hover {
+    color: rgb(106, 3, 179);
 }
